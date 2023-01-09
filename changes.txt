@@ -1,0 +1,3 @@
+Statements for moving motor on were moved outside of the loop. When a difference of 1 degree or greater is detected, then the while loop is broken, leading to the motor turning on. 
+The initial temperature is detected through a forloop that takes the average of the first 20 readings of the room's temperature. The forloop was also used to calculate the half range 
+error by finding the max_temp, min_temp, and then dividing their difference by 2.
